@@ -1,0 +1,157 @@
+body {
+	background-color: Wheat;
+	color: navy;
+}
+
+h1 {
+	text-decoration: underline;
+	text-align: center;
+}
+
+h1.error {
+	color: red;
+}
+
+h2 {
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+div.center {
+	text-align: center;
+}
+
+div table {
+	border-collapse: separate;
+	border-spacing: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	margin-top: 20px;
+	margin-button: 20px;
+}
+
+th {
+	border: solid;
+	border-width: medium;
+	border-color: navy;
+	padding: 5px;
+	text-align: center;
+	background-color: lightblue
+}
+
+td {
+	border: solid;
+	border-width: medium;
+	border-color: navy;
+	padding: 5px;
+}
+
+div tr:hover {
+	background-color: tan;
+}
+
+td.center {
+	text-align: center;
+}
+
+div th:first-of-type {
+	border-top-left-radius: 15px;
+}
+
+div th:last-of-type {
+	border-top-right-radius: 15px;
+}
+
+div tr:last-of-type td:first-of-type {
+	border-bottom-left-radius: 15px;
+}
+
+div tr:last-of-type td:last-of-type {
+	border-bottom-right-radius: 15px;
+}
+
+td.info {
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    border: solid;
+    border-width: medium;
+    border-color: darkslateblue;
+}
+
+form table {
+	border-radius: 15px;
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-button: 20px;
+	border: solid;
+	border-width: medium;
+	border-color: darkslateblue;
+}
+
+form td {
+	border: none;
+	padding: 5px;
+}
+
+td.label {
+	border: none;
+	text-align: right;
+}
+
+a:any-link {
+	color: navy;
+}
+
+.button {
+	text-decoration: none;
+	border-style: solid;
+	border-width: medium;
+	border-color: darkslateblue;
+	background-color: lightblue;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+	box-shadow: 7px 7px darkslateblue;
+	font-size: large;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.button-error:active {
+    box-shadow: 3px 3px darkslateblue;
+    transform: translate(4px, 4px);
+}
+
+.button-warning {
+    text-decoration: none;
+    border-style: solid;
+    border-width: medium;
+    border-color: darkred;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 7px 7px darkred;
+    font-size: large;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.button-warning:active {
+	box-shadow: 3px 3px darkred;
+	transform: translate(4px, 4px);
+}
+
+.textinput {
+	border-radius: 15px;
+	padding: 5px 5px 5px 5px;
+}
+
+.buttonbar {
+	text-align: center;
+	margin-top: 30px;
+}

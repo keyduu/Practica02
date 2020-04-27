@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Añadir disco</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<script type=text/javascript src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <h1>Añadir disco</h1>
+    <form action="/{{action}}">
+        <table class="tableForm">
+            <tr>
+                <td class="label">Título</td>
+                <td><input type="text" class="textinput" id="title" name="title" /></td>
+            </tr>
+            <tr>
+                <td class="label">Interprete:</td>
+                <td><input type="text" class="textinput" id="perdormer" name="performer" /></td>
+            </tr>
+            <tr>
+                <td class="label">Estilo de música:</td>
+                <td><input type="text" class="textinput" id="musicStyle" name="musicStyle" /></td>
+            </tr>
+            <tr>
+                <td class="label">Número de pistas:</td>
+                <td><input type="text" class="textinput" id="tracks" name="tracks" /></td>
+            </tr>
+            <tr>
+                <td class="label">Precio:</td>
+                <td><input type="text" class="textinput" id="price" name="price" /></td>
+            </tr>
+            <tr>
+                <td class="label">Correo electrónico de contacto:</td>
+                <td><input type="text" class="textinput" id="email" name="email" /></td>
+            </tr>
+        </table>
+        <div class="buttonbar">
+            <input type="submit" class="button" value="Guardar">
+        </div>
+    </form>
+</body>
+</html>

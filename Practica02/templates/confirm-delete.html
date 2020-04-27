@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>¿Está seguro?</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>¿Está seguro que desea eliminar el siguiente disco?</h1>
+    <div class="center">
+        <h2>Título</h2>
+        {{title}}
+        <h2>Interprete:</h2>
+        {{performer}}
+        <h2>Estilo de música:</h2>
+        {{musicStyle}}
+        <h2>Número de pistas:</h2>
+        {{tracks}}
+        <h2>Precio:</h2>
+        {{price}}
+        <h2>Correo electrónico de contacto:</h2>
+        {{email}}
+    </div>
+    <div class="center buttonbar">
+        <a class="button-warning" href="/delete-disc?id={{id}}">Borrar</a> <a class="button"
+            href="/discs-list">Cancelar</a>
+    </div>
+</body>
+</html>

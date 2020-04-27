@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido al portal de Discos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<h1>Bienvenido al portal de Discos</h1>
+<div class="center">
+    <img src="{{url_for('static', filename='/img/photo.jpg')}}" height=500px/>
+</div>
+<div class="buttonbar">
+    <a class="button" href='/discs-list'>Acceder al listado de discos</a>
+    </div>
+</body>
+</html>

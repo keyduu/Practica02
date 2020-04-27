@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Listado de discos</title>
+<link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+    <h1>Listado de discos</h1>
+    <div>
+        <table>
+            <tr">
+                <th>Titulo</th>
+                <th>Interprete</th>
+                <th>Estilo de música</th>
+                <th>Número de pistas</th>
+                <th>Precio</th>
+                <th></th>
+                <th></th>
+            </tr>
+            {% for disc in var_list %}
+            <tr>
+                <td>{{disc.title}}</td>
+                <td>{{disc.performer}}</td>
+                <td>{{disc.music_style}}</td>
+                <td>{{disc.tracks}}</td>
+                <td>{{disc.price}}</td>
+                <td class="center"><a class="button" href='/edit-disc?id={{disc.id_disc}}'>Editar</a>
+                </td>
+                <td class="center"><a class="button" href='/confirm-delete?id={{disc.id_disc}}'>Borrar</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="buttonbar">
+        <a class="button" href='/add-disc'>Añadir un disco</a>
+    </div>
+</body>
+</html>
